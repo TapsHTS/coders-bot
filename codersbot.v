@@ -91,7 +91,7 @@ fn on_message_create(mut client vd.Client, evt &vd.MessageCreate) {
 
     if cmd_name == 'mention' {
         client.channel_message_delete(evt.channel_id, evt.id)
-        client.channel_message_send(evt.channel_id, 'Please do not ping people to get help. Ask your question and if the person is available, he or she will answer you (and if someone else knows, he or she will answer too). :wink:')
+        client.channel_message_send(evt.channel_id, 'Please do not ping people to get help. Ask your question and if the person is available, he or she will answer you (and if someone else knows, he or she will answer too). :ok_hand:')
     }
 
     if cmd_name == '!ping' {
